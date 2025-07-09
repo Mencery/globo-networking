@@ -34,3 +34,9 @@ variable "environment" {
   description = "(Optional) Environment  Default: development"
   default     = "development"
 }
+
+
+variable "billing_code" {
+  type        = string
+  description = "billing code"
+}
