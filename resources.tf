@@ -17,7 +17,7 @@ data "aws_availability_zones" "available" {}
 ##################################################################################
 locals {
   common_tags = {
-     Environment = var.environment    
+    Environment = var.environment
   }
 }
 
@@ -60,5 +60,5 @@ resource "aws_security_group" "ingress" {
   revoke_rules_on_delete = null
   tags                   = {}
   tags_all               = {}
-  vpc_id                 =  module.main.vpc_id
+  vpc_id                 = module.main.vpc_id
 }
